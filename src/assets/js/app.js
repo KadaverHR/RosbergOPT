@@ -27,20 +27,20 @@ window.onload = function () {
 
 
   let burger = document.querySelector('.burger');
-  let menu = document.querySelector('.header__list-mobile');
-  let menuLinks = menu.querySelectorAll('.header__link');
+  let menu = document.querySelector('.mobile-menu');
+  let menuLinks = menu.querySelectorAll('.mobile-menu__link');
 
 
   burger.addEventListener('click', function () {
       burger.classList.toggle('burger--active');
-      menu.classList.toggle('header__list-mobile--active');
+      menu.classList.toggle('mobile-menu--active');
       document.body.classList.toggle('stop-scroll');
   });
 
   menuLinks.forEach(function (el) {
       el.addEventListener('click', function () {
           burger.classList.remove('burger--active');
-          menu.classList.remove('header__list-mobile--active');
+          menu.classList.remove('mobile-menu--active');
           document.body.classList.remove('stop-scroll')
       })
   });
