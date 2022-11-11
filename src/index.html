@@ -53,20 +53,33 @@
                   <p class="header-top__contact-text">office3@mtkrosberg.ru</p>
                 </a>
               </div>
-              <div class="header-top__btn-block">
-                <button class="button button__red">Регистрация</button>
-                <button class="button button__blue">Вход на портал</button>
+              <div data-fancybox
+              href="#registration" class="header-top__btn-block">
+                <button
+                  
+                  class="button button__red"
+                >
+                  Регистрация
+                </button>
+                <button  data-fancybox
+                href="#entry" class="button button__blue">
+                  Вход на портал
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+
       <div class="header-bottom">
         <div class="container-fluid">
           <div class="container container-mobile">
             <div class="header-bottom__content">
-              <button aria-label=" Кнопка открыть меню" class="header__burger burger">
+              <button
+                aria-label=" Кнопка открыть меню"
+                class="header__burger burger"
+              >
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
@@ -76,7 +89,8 @@
                 <nav class="mobile-menu__nav">
                   <ul class="mobile-menu__list">
                     <li class="mobile-menu__item">
-                      <a href="#" class="mobile-menu__link">
+                      <a data-fancybox
+                      href="#registration" href="#" class="mobile-menu__link">
                         <p class="mobile-menu__text">Регистрация</p>
                         <svg
                           width="8"
@@ -85,7 +99,8 @@
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <path class="mobile-menu__text-svg"
+                          <path
+                            class="mobile-menu__text-svg"
                             d="M4.88787 5.00002L0.769533 1.17509L1.8904 0.136353L7.13859 5.00002L1.8904 9.86368L0.769531 8.82493L4.88787 5.00002Z"
                             fill="#848282"
                           />
@@ -102,7 +117,8 @@
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <path class="mobile-menu__text-svg"
+                          <path
+                            class="mobile-menu__text-svg"
                             d="M4.88787 5.00002L0.769533 1.17509L1.8904 0.136353L7.13859 5.00002L1.8904 9.86368L0.769531 8.82493L4.88787 5.00002Z"
                             fill="#848282"
                           />
@@ -119,7 +135,8 @@
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <path class="mobile-menu__text-svg"
+                          <path
+                            class="mobile-menu__text-svg"
                             d="M4.88787 5.00002L0.769533 1.17509L1.8904 0.136353L7.13859 5.00002L1.8904 9.86368L0.769531 8.82493L4.88787 5.00002Z"
                             fill="#848282"
                           />
@@ -136,7 +153,8 @@
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <path class="mobile-menu__text-svg"
+                          <path
+                            class="mobile-menu__text-svg"
                             d="M4.88787 5.00002L0.769533 1.17509L1.8904 0.136353L7.13859 5.00002L1.8904 9.86368L0.769531 8.82493L4.88787 5.00002Z"
                             fill="#848282"
                           />
@@ -153,7 +171,8 @@
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <path class="mobile-menu__text-svg"
+                          <path
+                            class="mobile-menu__text-svg"
                             d="M4.88787 5.00002L0.769533 1.17509L1.8904 0.136353L7.13859 5.00002L1.8904 9.86368L0.769531 8.82493L4.88787 5.00002Z"
                             fill="#848282"
                           />
@@ -207,22 +226,134 @@
                 </ul>
               </nav>
               <div class="header-bottom__btn-block">
-                <button class="button button__red">Регистрация</button>
-                <button class="button button__blue">Вход на портал</button>
+                <button data-fancybox
+                href="#registration" class="button button__red">Регистрация</button>
+                <button data-fancybox href="#entry" class="button button__blue">Вход на портал</button>
               </div>
-
-          
             </div>
             <div class="header-bottom__btn-mobile">
-              <a href="#" class="header-bottom__btn-link">
+              <button data-fancybox
+              href="#entry" class="header-bottom__btn-link">
                 <span> Вход </span>
                 <img src="/assets/img/vhod.svg" />
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+
+      <!-- Модалки -->
+
+      <div style="display: none;" class="modal" id="entry">
+        <div class="modal__container">
+           <img data-fancybox-close class="modal__exit" src="/assets/img/modal-exit.svg" >
+                <div class="modal__title-wrapper">
+                  <h2 class="modal__title">Вход</h2>
+                </div>
+                  <form class="modal__form" action="">
+                    <ul class="modal__list">
+                      <li class="form__item">
+                        <input
+                          placeholder="Логин"
+                          class="form__input modal__input"
+                          type="text"
+                          required
+                        />
+                      </li>
+                      <li class="form__item">
+                        <input
+                          placeholder="Пароль"
+                          class="form__input modal__input"
+                          type="password"
+                          required
+                        />
+                      </li>
+                    </ul>
+                    <button data-fancybox-close type="submit" class="button button__submit modal__btn">
+                      вход
+                    </button>
+                  </form>
+                <div class="modal__text-wrapper">
+                  <p class="modal__text">
+                    Входя на сайт, Вы соглашаетесь с нашими условиями
+                  </p>
+                  <a href="https://mtkrosberg.ru/privacy_policy/" class="modal__link">
+                    “Пользовательского соглашения”
+                  </a>
+
+                </div>
+              
+        </div>
+    </div>   
+
+
+
+    <div style="display: none;" class="modal" id="registration">
+      <div class="modal__container">
+         <img data-fancybox-close class="modal__exit" src="/assets/img/modal-exit.svg" >
+              <div class="modal__title-wrapper">
+                <h2 class="modal__title">Регистрация</h2>
+              </div>
+                <form class="modal__form" action="">
+                  <ul class="modal__list">
+                    <li class="form__item">
+                      <input
+                        placeholder="ФИО"
+                        class="form__input modal__input"
+                        type="text"
+                        required
+                      />
+                    </li>
+                    <li class="form__item">
+                      <input
+                        placeholder="Должность"
+                        class="form__input modal__input"
+                        type="text"
+                        required
+                      />
+                    </li>
+                    <li class="form__item">
+                      <input
+                        placeholder="Телефон"
+                        class="form__input modal__input"
+                        type="tel"
+                        required
+                      />
+                    </li>
+                    <li class="form__item">
+                      <input
+                        placeholder="Email"
+                        class="form__input modal__input"
+                        type="email"
+                        required
+                      />
+                    </li>
+                  </ul>
+                  <button data-fancybox-close type="submit" class="button button__red modal__btn">
+                    Отправить
+                  </button>
+                </form>
+              <div class="modal__text-wrapper">
+                <p class="modal__text">
+                  Входя на сайт, Вы соглашаетесь с нашими условиями
+                </p>
+                <a href="https://mtkrosberg.ru/privacy_policy/" class="modal__link">
+                  “Пользовательского соглашения”
+                </a>
+
+              </div>
+            
+      </div>
+  </div> 
+
+
+
+
+
+
+
 
     <main>
       <section id="about" class="about">
@@ -608,7 +739,8 @@
         </div>
       </div>
     </footer>
-
+    <script src="assets/libs/jquery.js"></script>
+    <script src="assets/libs/fancyapps.js"></script>
     <script src="assets/js/app.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"

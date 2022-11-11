@@ -35,6 +35,7 @@
     "yargs": "^17.0.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.1.3",
     "gulp-autoprefixer": "^8.0.0",
@@ -47,6 +48,7 @@
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "reset-css": "^5.0.1",
+    "rmodal": "^1.1.0",
     "select2": "^4.1.0-rc.0",
     "swiper": "^8.2.2"
   },

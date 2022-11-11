@@ -896,6 +896,11 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     "to-fast-properties" "^2.0.0"
 
+"@fancyapps/ui@^4.0.31":
+  "integrity" "sha512-D7+PMIloxSOFJyY+lXcNlVDhmssOmDT6PT5fqQUIiws2hT7PH29r0EKZxERmACSQpm6qrFkP7rSguzXWvRJduQ=="
+  "resolved" "https://registry.npmjs.org/@fancyapps/ui/-/ui-4.0.31.tgz"
+  "version" "4.0.31"
+
 "@gar/promisify@^1.1.3":
   "integrity" "sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw=="
   "resolved" "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.3.tgz"
@@ -7857,6 +7862,11 @@
   dependencies:
     "hash-base" "^3.0.0"
     "inherits" "^2.0.1"
+
+"rmodal@^1.1.0":
+  "integrity" "sha512-por292FAFA16J+tGNbnjFyr2e/HS55JSNSz9DELSI4PYVcDyyE64TUzWau5UyhyRDR9g4AWJsdjIWl/nY3nXaQ=="
+  "resolved" "https://registry.npmjs.org/rmodal/-/rmodal-1.1.0.tgz"
+  "version" "1.1.0"
 
 "run-parallel@^1.1.9":
   "integrity" "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA=="
