@@ -67,14 +67,17 @@
     width: 100%
     display: grid
     grid-template-areas: "i1 i2 i3 i4" "y y y y" "t1 t2 t3 t4"  
+    grid-template-columns: repeat(4, 1fr)
     justify-items: center
     gap: 0 50px   
     @media all and ($table)
       gap: 0 20px 
     @media all and ($mobile)
       grid-template-areas: "i1 i2" "y1 y2" "t1 t2" "i3 i4" "y3 y4" "t3 t4"  
+      grid-template-columns: repeat(2, 1fr)
     @media all and ($mobilexs) 
       grid-template-areas: "i1" "y1" "t1" "i2" "y2" "t2" "i3" "y3" "t3" "i4" "y4" "t4"
+      grid-template-columns: repeat(1, 1fr)
     .about-page__text-wrapper
       padding: 10px 0
       @media all and ($mobile)
@@ -93,6 +96,9 @@
       display: none
   &__img-wrapper
     padding-bottom: 10px
+    // width: calc((100% - 300px) / 4  )
+
+
   &__img-wrapper img
     border-radius: 5px
   &__years-wrapper
