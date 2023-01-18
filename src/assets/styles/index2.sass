@@ -1,0 +1,92 @@
+.cert-page
+  background: #Fff
+  padding: 40px 0
+  @media all and ($mobile)
+    padding: 20px 0
+  &__title-wrapper
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__title
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      bottom: -10px
+      left: 50%
+      transform: translateX(-50%)
+      width: 80px
+      height: 3px
+      background: #BD0A2F
+  &__block
+    padding: 50px 0 20px 0
+  &__list-wrapper
+    width: 100%
+    overflow: auto
+  &__list
+    display: grid
+    grid-template-columns: repeat(6,auto)
+    gap: 30px 8px
+    padding-bottom: 20px
+    justify-content: space-evenly
+    @media all and ('max-width: 1244px')
+      grid-template-columns: repeat(5,auto)
+    @media all and ('max-width:1043px')
+      grid-template-columns: repeat(4,auto)
+    @media all and ('max-width:634px')
+      grid-template-columns: repeat(3,auto)
+    @media all and ('max-width:486px')
+      grid-template-columns: repeat(2,auto)
+
+  &__item
+    max-width: 191px
+    margin: 1px
+    padding: 5px
+    background: #FFFFFF
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15)
+    border-radius: 1px
+    transition: outline 0.3s ease-in-out
+
+    @media all and ($table)
+      max-width: 161px
+    @media all and ($mobile)
+      max-width: 139px
+    &:hover, &:focus, &:active
+      outline: 1px solid #BD0A2F
+    img
+      max-width: 181px
+      @media all and ($table)
+        max-width: 151px
+      @media all and ($mobile)
+        max-width: 129px
+
+  &__bth-block
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 20px
+  &__button
+    padding: 16px 44px
+    background: #487DB4
+    border: 1px solid #487DB4
+    &:hover, &:focus, &:active
+      border: 1px solid #39464f
+      background: #39464f
+
+.d--none
+  display: none
+// @media all and ('max-width:486px')
+//   .d--none:nth-child(-n + 4)
+//     display: block
+// @media all and ('max-width:634px')
+//   .d--none:nth-child(-n + 6)
+//     display: block
+// @media all and ('max-width:1043px')
+//   .d--none:nth-child(-n + 8)
+//     display: block
+// @media all and ('max-width: 1244px')
+//   .d--none:nth-child(-n + 10)
+//     display: block
+

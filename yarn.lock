@@ -8696,10 +8696,10 @@
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
 
-"swiper@^8.2.2":
-  "integrity" "sha512-TPq64KiZUt8lZY5ZEg75RjToT+RwfLomfKIpcFLy6+UCUp2kL7hHWslLxjFtcFeiwfG67RHFYbJnq6tsothcJQ=="
-  "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.2.4.tgz"
-  "version" "8.2.4"
+"swiper@^8.4.6":
+  "integrity" "sha512-HACW035vBz2T6Kfut23EAzXhcDpgR8doX+wjq0ZUvJgS5SQApGrV885DAPLBFnmPUISsAhNSVxPKDxqroFvXvQ=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.4.6.tgz"
+  "version" "8.4.6"
   dependencies:
     "dom7" "^4.0.4"
     "ssr-window" "^4.0.2"

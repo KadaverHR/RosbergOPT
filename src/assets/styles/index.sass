@@ -8,8 +8,8 @@ body, main
   min-width: 320px
   overflow-x: hidden
 
-main
-  min-height: 100vh
+// main
+//   min-height: 100vh
 
 img
   max-width: 100%
@@ -22,11 +22,19 @@ hr
   height: 100%
 
 .container
-  max-width: 1200px
+  max-width: 1230px
   margin: 0 auto
   padding-left: 15px
   padding-right: 15px
   height: 100%
+
+.container1350
+  max-width: 1400px
+  margin: 0 auto
+  padding-left: 25px
+  padding-right: 25px
+  height: 100%
+
 
 .container-mobile
   @media all and ($mobile)
@@ -60,7 +68,8 @@ textarea
   &::placeholder
     color: #60656E
     font: 400 15px/20px 'Lato', sans-serif
-
+.btn-wrapper
+  padding: 20px 0
 .button
   border-radius: 1px
   font: 400 13px/16px 'Lato', sans-serif
@@ -68,6 +77,7 @@ textarea
   text-transform: uppercase
   padding: 14px 0
   white-space: nowrap
+  cursor: pointer
   &:hover, &:focus, &:active
     color: #fff
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out
@@ -304,7 +314,13 @@ textarea
       padding-bottom: 0
     @media all and ($mobile)
       font: 400 14px/18px 'Lato', sans-serif
-
+  &__btn
+    padding: 16px 44px
+    background: #487DB4
+    border: 1px solid #487DB4
+    &:hover, &:focus, &:active
+      border: 1px solid #39464f
+      background: #39464f
   &__banner
     width: 55%
     @media all and ($table)
@@ -443,7 +459,7 @@ textarea
     display: flex
     padding-bottom: 20px
   &__item
-    margin-right: 10px
+    margin: 1px 9px 1px 1px
     padding: 5px
     background: #FFFFFF
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15)
@@ -452,7 +468,7 @@ textarea
     &:hover, &:focus, &:active
       outline: 1px solid #BD0A2F
     &:last-child
-      margin-right: 0
+      margin-right: 1px
   &__bth-block
     display: flex
     align-items: center

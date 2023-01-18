@@ -50,7 +50,7 @@
     "reset-css": "^5.0.1",
     "rmodal": "^1.1.0",
     "select2": "^4.1.0-rc.0",
-    "swiper": "^8.2.2"
+    "swiper": "^8.4.6"
   },
   "browserslist": [
     "last 4 versions"

@@ -1,0 +1,146 @@
+#map 
+  width: 100%
+  height: 250px
+
+.contacts
+  padding: 50px 0
+  background-color: #fff
+  margin-top: 3px
+  @media all and ($mobile)
+    margin-top: 0
+    padding: 30px 0
+  &__title-wrapper
+    padding-bottom: 10px
+    display: flex
+    width: 100%
+    justify-content: center
+  &__title
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      bottom: -10px
+      left: 50%
+      transform: translateX(-50%)
+      width: 80px
+      height: 3px
+      background: #BD0A2F
+  &__block
+    padding: 30px 0
+    @media all and ($mobile)
+      padding: 10px 0
+  &__block-list
+    display: flex
+    justify-content: space-between
+    padding-bottom: 30px
+    border-bottom: 1px solid #E1E1E1
+    @media all and ($table)
+      flex-wrap: wrap
+      justify-content: flex-start
+      padding-bottom: 10px
+    @media all and ($mobile)
+      flex-direction: column
+
+  &__block-item
+    width: calc( (100% - 40px) / 5  )
+    display: flex
+    flex-direction: column
+    padding: 0 20px
+    border-right: 1px dashed #B8BAC1 
+    align-content: center
+    align-items: center
+    @media all and ($table)
+      width: calc( (100% - 40px) / 3  )
+      padding: 10px 10px
+      min-width: 200px
+      border-right: 0
+      &:nth-child(-n+3) 
+        border-bottom: 1px dashed #B8BAC1  
+      &:nth-child(4)
+        padding-left: 0
+    @media all and ($mobile)
+      width: 100%
+      border-bottom: 1px dashed #B8BAC1 
+      padding-left: 0
+      &:last-child
+        border: 0
+        
+    &:last-child
+      padding-right: 0
+      border-right: 0
+    &:first-child
+      padding-left: 0
+  &__block-title
+    width: 100%
+    text-align: left
+    padding: 4px 0
+    font: 400 11px/13px 'Lato', sans-serif
+    color:  #757575
+    text-transform: uppercase
+  &__block-text
+    width: 100%
+    text-align: left
+    padding: 4px 0
+    font: 400 15px/18px 'Lato', sans-serif
+    color:  #000
+    &--link 
+      transition: color 0.3s ease-in-out
+      &:hover,
+      &:focus,
+      &:active
+        color: #2F5379
+        
+  &__map-block
+    width: 100%
+    display: flex
+    padding: 30px 0
+    @media all and ($table)
+      flex-direction: column
+  &__map-list-wrapper
+    width: 39%
+    @media all and ($table)
+      width: 100%
+
+  &__map-title-wrapper
+    padding-bottom: 14px
+  &__map-title
+    font: 400 11px/13px 'Lato', sans-serif
+    color:  #757575
+    text-transform: uppercase
+  &__submenu
+    display: flex
+    flex-direction: column
+    padding-top: 20px
+  &__map-item
+    padding-left: 18px
+    padding-bottom: 20px
+    position: relative
+    &::before
+      content: url('/assets/img/icon-map.svg')
+      position: absolute
+      left: 0
+      top: 3px
+  &__map-link
+    font: 400 15px/18px 'Lato', sans-serif
+    color:  #000
+    transition: color 0.3s ease-in-out
+    &:hover,
+    &:focus,
+    &:active
+      color: #BD0A2F
+  
+
+
+.ymaps-2-1-79-controls-pane *, .ymaps-2-1-79-searchpanel-pane *
+  display: none
+        
+.map-wrapper
+  width: 60%
+  height: 100%
+  border-radius: 5px
+  padding-left: 20px
+  @media all and ($table)
+    width: 100%
+    padding-left: 0
+
+

@@ -1,0 +1,254 @@
+.about-page
+  padding: 50px 0
+  background-color: #F8F8F8
+  margin-top: 3px
+  @media all and ($mobile)
+    margin-top: 0
+    padding: 30px 0
+  &--white
+    padding: 50px 0
+    background-color: #fff
+    @media all and ($mobile)
+      margin-top: 0
+      padding: 30px 0
+ 
+  &__area
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+  &__block
+    display: flex
+    width: 100%
+    flex-direction: column
+    align-items: flex-start
+  &__title-wrapper
+    padding-bottom: 10px
+    display: flex
+    width: 100%
+    justify-content: center
+  &__title
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      bottom: -10px
+      left: 50%
+      transform: translateX(-50%)
+      width: 80px
+      height: 3px
+      background: #BD0A2F
+  &__text-wrapper
+    padding-top: 20px
+    padding-bottom: 20px
+  &__text
+    font: 400 18px/22px 'Lato', sans-serif
+    color: #000
+    padding-bottom: 20px
+    strong
+      font-weight: 700
+    &:last-child
+      padding-bottom: 0
+    @media all and ($table)
+      font: 400 15px/18px 'Lato', sans-serif
+    @media all and ($mobile)
+      font: 400 14px/18px 'Lato', sans-serif
+  &__btn
+    padding: 16px 44px
+    background: #487DB4
+    border: 1px solid #487DB4
+    &:hover, &:focus, &:active
+      border: 1px solid #39464f
+      background: #39464f
+  &__history-block
+    padding-top: 20px
+    max-width: 1050px
+    margin: 0 auto
+  &__history-list
+    width: 100%
+    display: grid
+    grid-template-areas: "i1 i2 i3 i4" "y y y y" "t1 t2 t3 t4"  
+    justify-items: center
+    gap: 0 50px   
+    @media all and ($table)
+      gap: 0 20px 
+    @media all and ($mobile)
+      grid-template-areas: "i1 i2" "y1 y2" "t1 t2" "i3 i4" "y3 y4" "t3 t4"  
+    @media all and ($mobilexs) 
+      grid-template-areas: "i1" "y1" "t1" "i2" "y2" "t2" "i3" "y3" "t3" "i4" "y4" "t4"
+    .about-page__text-wrapper
+      padding: 10px 0
+      @media all and ($mobile)
+        padding: 10px 10px 20px 10px
+  &__history-item
+    // display: grid
+    // grid-template-columns: repeat(4,1fr)
+    gap: 50px
+    &--position
+      width: 100%
+      display: grid
+      grid-template-columns: repeat(4,1fr)
+      gap: 50px
+      position: relative
+    @media all and ($mobile)
+      display: none
+  &__img-wrapper
+    padding-bottom: 10px
+  &__img-wrapper img
+    border-radius: 5px
+  &__years-wrapper
+    display: flex
+    justify-content: center
+  &__years-text
+    z-index: 1
+    font: 700 26px/31px 'Lato', sans-serif
+    color: #BD0A2F
+    padding: 10px 30px
+    background-color: #F8F8F8
+    @media all and ($table)
+      font: 700 21px/25px 'Lato', sans-serif
+      padding: 5px 20px
+  &__history-line-wrapper
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+  &__history-line
+    @media all and ($mobile)
+      display: none
+
+
+  &__info-block
+    padding: 50px
+    display: flex
+    justify-content: center
+    width: max-content
+    margin: 0 auto
+    @media all and ($mobile)
+      flex-direction: column
+      align-items: center
+      padding: 10px
+  &__info-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 10px 30px
+    border-right: 2px solid #E1E1E1
+    @media all and ($mobile)
+      padding: 20px 10px
+      width: 100%
+      border-right: 0
+      border-bottom: 2px solid #E1E1E1
+    &:last-child
+      border-right: 0
+      border-bottom: 0
+
+    
+
+  &__info-title
+    white-space: nowrap
+    font: 700 42px/34px 'Lato', sans-serif
+    color: #2F5379
+    padding-bottom: 8px
+    @media all and ($mobile)
+      font: 700 25px/21px 'Lato', sans-serif
+    span
+      font-weight: 400
+    &--red 
+      color: #BD0A2F 
+  &__info
+    font: 700 16px/20px 'Lato', sans-serif
+    color:  #1F2226
+    text-transform: uppercase
+    @media all and ($mobile)
+      font: 700 15px/18px 'Lato', sans-serif
+
+
+
+
+
+.i1
+  grid-area: i1
+.i2
+  grid-area: i2
+.i3
+  grid-area: i3
+.i4
+  grid-area: i4
+
+.y1
+  grid-area: y1
+.y2
+  grid-area: y2
+.y3
+  grid-area: y3
+.y4
+  grid-area: y4
+
+.y
+  grid-area: y
+  @media all and ($mobile)
+    display: none
+
+.y1, 
+.y2,
+.y3,
+.y4
+  display: none
+  @media all and ($mobile)
+    display: block
+
+.t1
+  grid-area: t1
+.t2
+  grid-area: t2
+.t3
+  grid-area: t3
+.t4
+  grid-area: t4
+
+
+
+
+
+
+
+.swiper-brand
+  cursor: pointer
+  user-select: none
+  &.swiper-pointer-events
+    padding-bottom: 20px
+  .swiper-slide
+    width: 200px
+
+
+.swiper-brand-area
+  position: relative
+  padding-top: 50px
+  @media all and ($mobile)
+    padding-top: 20px
+  .swiper-wrapper
+    align-items: center
+  .swiper-slide
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+
+
+// @media all and ($middle)
+//   .swiper-brand-body
+//     padding: 25px 0 45px 0
+//   .swiper-brand.swiper-pointer-events
+//     padding-left: 15px
+//     padding-right: 15px
+//     margin: 0 -15px
+
+// @media all and ($mobile)
+//   .swiper-brand-body
+//     padding: 15px 0 35px 0
+//   .swiper-brand-section
+//     .title-block
+//       margin-bottom: 5px
+//   .swiper-brand-area .swiper-scrollbar
+//     bottom: -10px
